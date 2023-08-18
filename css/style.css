@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* body {
+  background-color: #DCE2F0;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color:#50586C;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 2px solid orangered;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-size: 24px;
+}
+
+nav ul li .hamburger-active {
+  color: orangered;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.nav-right a:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* container */
+.container {
+  width: 800px;
+  background-color: #50586C;
+  margin: 150px auto;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 62%;
+}
+
+.content h1 {
+  font-size: 24px;
+}
+
+button {
+  background-color: orangered;
+  padding: 4px 13px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button a:hover {
+  color: black;
+}
+
+p a {
+  text-decoration: none;
+  color: orangered;
+  font-size: 14px;
+}
+
+p a:hover {
+  color: orange;
+}
+
+.sosmed i {
+  font-size: 20px;
+  padding-right: 8px;
+  text-decoration: none;
+  color: white;
+}
+
+.sosmed i:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.card-content {
+  color: #50586C;
+  background-color: #DCE2F0;
+  width: 30%;
+  height: 0%;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+}
+
+.card-content img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content h2,
+h4 {
+  text-align: center;
+}
+
+/*    Hamburger    */
+#barsMenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 18px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  /* margin-top: 55px; */
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  color: white;
+  background-color: orangered;
+}
+
+/*    RESPONSIVE     */
+
+@media screen and (max-width: 480px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .container {
+    font-size: 12px;
+    width: 60%;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 60px;
+  }
+  .card-content {
+    width: 97%;
+  }
+
+  .content {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .container {
+    /* margin-top: 400px; */
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    top: 3vh;
+    font-size: 11px;
+    align-items: center;
+  }
+
+  
+
+  .container .content h1 {
+    font-size: 18px;
+  }
+
+  .card-content {
+    width: 200px;
+  }
+
+  .content {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .container {
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+    top: 3vh;
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .content h1 {
+    font-size: 20px;
+  }
+
+  .card-content {
+    width: 300px;
+    
+  }
+
+  .content {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+
+}

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #DCE2F0;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #50586C;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 2px solid orangered;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav ul li  .active {
+  color: orangered;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  font-size: 20px;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.nav-right a:hover {
+  background-color: orange;
+  color: black;
+}
+/*    NAVBAR END     */
+
+h1 {
+  font-size: 24px;
+  color: #50586C;
+}
+
+form {
+  color: #50586C;
+  width: 500px;
+  margin: auto;
+  font-size: 14px;
+  height: 700px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+label {
+  font-weight: 400;
+}
+
+input,
+select,
+textarea {
+  
+  background-color: white;
+  font-size: 14px;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #dbdbdb;
+  resize: none;
+  box-shadow: 0 0 5px;
+}
+button {
+  background-color: orangered;
+  color: white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: orange;
+  color: black;
+}
+
+/*    Hamburger    */
+#barsMenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 18px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  /* margin-top: 55px; */
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  color: white;
+  background-color: orangered;
+}
+
+/*    RESPONSIVE     */
+
+@media only screen and (max-width: 481px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  form {
+    width: 280px;
+    font-size: 12px;
+    height: 500px;
+  }
+
+  button {
+    font-size: 11px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  form {
+    width: 65%;
+    font-size: 12px;
+    height: 500px;
+  }
+
+  h1,
+  form {
+    position: relative;
+    top: 8vh;
+  }
+
+  button {
+    font-size: 11px;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  form {
+    width: 65%;
+    font-size: 12px;
+    height: 500px;
+  }
+
+  h1,
+  form {
+    position: relative;
+    top: 9vh;
+  }
+}

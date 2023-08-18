@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #dce2f0;
+  color: white;
+}
+
+/* NAVBAR START */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #50586c;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 2px solid orangered;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li:hover {
+  font-size: 25px;
+}
+
+nav ul li .active {
+  color: orangered;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 23px;
+}
+
+nav ul li a:hover {
+  color: white;
+  font-size: 26px;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.nav-right a:hover {
+  background-color: orange;
+  color: black;
+}
+/* NAVBAR END */
+
+/* form */
+
+.project {
+  color: #50586c;
+  width: 700px;
+  border-radius: 15px;
+  margin: 20px auto;
+  margin-top: 10vh;
+}
+
+.project-form {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-form .form-container {
+  width: 700px;
+}
+
+.project-form .form-container h1 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-form form label {
+  font-size: 20px;
+  font-weight: 400;
+}
+.date {
+  display: flex;
+}
+
+.date-start {
+  width: 330px;
+}
+
+.date-end {
+  padding-left: 40px;
+  width: 330px;
+}
+.project-form form input,
+select {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  box-shadow: 0 0 5px grey;
+  border-radius: 8px;
+}
+
+.project-form form textarea {
+  box-shadow: 0 0 5px grey;
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 8px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+
+.project-form form .input-project-image-group {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  background: #f4f3f3;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+.project-form form .input-project-image-group label p {
+  font-size: 15px;
+}
+
+.project-form form .input-project-image-group label {
+  width: 95%;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  /* background-color: #ec4d37; */
+}
+
+.project-form form .button-group {
+  text-align: right;
+}
+
+.project-form form button {
+  padding: 8px 20px;
+  font-size: 17px;
+  background: #ec4d37;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.project-form form button:hover {
+  background-color: orange;
+  color: black;
+}
+
+/*    PROJECT LIST     */
+.project-list {
+  background-color: #bbc9eb;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  padding: 35px 80px;
+}
+
+.header-project {
+  background-color: rgb(206, 206, 206);
+  justify-content: space-between;
+  padding: 5px 80px;
+  color: #50586c;
+}
+
+.project-list-item {
+  width: 400px;
+  text-align: justify;
+  color: white;
+  background-color: #50586c;
+  border-radius: 15px;
+  justify-content: center;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  margin: auto;
+}
+
+.title-content .judul {
+  color: white;
+}
+
+.title-content .judul:hover {
+  color: orangered;
+}
+
+.project-list-item .project-content {
+  font-size: 15px;
+}
+
+.project-list .btn-group {
+  display: flex;
+  text-align: right;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.project-list .btn-group button:hover {
+  background-color: orange;
+  color: black;
+}
+
+.project-list .title-content .post {
+  margin: 0px;
+}
+.project-list .btn-group .btn-edit {
+  flex: 50%;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: orangered;
+  color: #ffffff;
+}
+
+.project-list .btn-group .btn-post {
+  flex: 50%;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 4px;
+  background: orangered;
+  color: #fff;
+}
+
+.project-list-item .project-image img {
+  height: 50%;
+  object-fit: cover;
+}
+
+.table-checkbox table {
+  width: 100%;
+  margin-left: -20px;
+}
+
+#barsMenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 18px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  /* margin-top: 55px; */
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  color: white;
+  background-color: orangered;
+}
+
+@media only screen and (max-width: 850px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .container .top .project {
+    width: 100%;
+  }
+
+  .project-form .form-container h1 {
+    font-size: 24px;
+  }
+
+  .date{
+    flex-direction: column;
+    width: 550px;
+  }
+
+  .date-start {
+    width: 550px;
+  }
+
+  .date-end {
+    width: 550px;
+    position: relative;
+    left: -40px;
+  }
+
+  form {
+    width: 550px;
+    position: relative;
+    left: 60px;
+  }
+  .container .bottom .project-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-list-item {
+    width: 100%;
+    margin: 40px auto;
+  }
+
+  .title-content .judul {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  form {
+    width: 300px;
+    margin-right: 130px;
+  }
+
+  .project-form .form-container h1 {
+    font-size: 22px;
+  }
+
+  .date-start {
+    width: 300px;
+  }
+
+  .date-end {
+    width: 300px;
+    position: relative;
+    left: -40px;
+  }
+}

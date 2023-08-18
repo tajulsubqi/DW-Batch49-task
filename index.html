@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-left">
+        <ul>
+          <li>
+            <img src="image/logo.png" alt="logo" style="width: 40px" />
+          </li>
+          <li class="item-collapse">
+            <a href="index.html" class="hamburger-active">Home</a>
+          </li>
+          <li class="item-collapse">
+            <a href="blog.html">My Project</a>
+          </li>
+          <li class="item-collapse">
+            <a href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-right" id="barsMenu">
+        <button
+          style="background-color: transparent; color: white; border: none; cursor: pointer"
+
+          onclick="openHamburger()"
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      
+    </nav>
+
+        <!-- Humberger Menu -->
+      </div>
+      <div class="hamburger-nav-container" id="hamburger-nav-container" style="margin-top: 55px">
+        <a href="index.html" class="hamburger-active">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimoni.html">Testimonials</a>
+
+      </div>
+      <!-- Hamburger End -->
+
+    <!-- COntainer -->
+    <div class="container">
+      <div class="content">
+        <h1>Hi! Welcome to My Website</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Reprehenderit nobis aut officia molestiae repellendus distinctio eaque
+          natus, perspiciatis eligendi, pariatur quos non repudiandae. Non
+          ducimus dolorem, nihil ea ratione voluptate. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Repellendus nihil sed eius
+          accusantium delectus,
+        </p>
+
+        <button><a href="">About</a></button>
+        <p>
+          <a href="">download CV <i class="fa-solid fa-download"></i></a>
+        </p>
+
+        <div class="sosmed">
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+        </div>
+      </div>
+
+      <!-- Side-Bar -->
+      <div class="card-content">
+        <img src="image/img.png" alt="img" />
+        <h2>Tajul Subqi</h2>
+        <h4>Fullstack Developer</h4>
+      </div>
+
+      <!-- <div class="clear"></div> -->
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

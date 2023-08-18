@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* body {
+  background-color: #dce2f0;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #50586c;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 2px solid orangered;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  font-size: 22px;
+}
+
+nav ul li .hamburger-active {
+  color: orangered;
+}
+
+.nav-left {
+  flex: 50%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-right a:hover {
+  background-color: orange;
+  color: black;
+}
+/*      NAVBAR END       */
+
+/*    Hamburger    */
+#barsMenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 18px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid white;
+}
+
+.hamburger-nav-container .hamburger-active {
+  color: white;
+  background-color: orangered;
+}
+/*    Hamburger End */
+
+.container {
+  font-family: "Poppins", sans-serif;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  margin-top: 80px;
+  font-size: 28px;
+  color: #50586c;
+}
+
+.container p {
+  font-size: 17px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+.testimonial {
+  width: 25%;
+  margin: 0 15px 30px 15px;
+  padding: 20px;
+  background-color: #50586c;
+  border: 1px solid grey;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+
+.testimonial img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.quote {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.profile-testimonial {
+  width: 100%;
+}
+
+.container-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-btn {
+  margin: 20px;
+  padding: 0px 15px;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/*      RESPONSIVE       */
+@media only screen and (max-width: 900px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .testimonial {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsMenu {
+    display: block;
+  }
+
+  .container-rating .rating-btn {
+    font-size: 13px;
+    /* padding: 10px; */
+    margin: 0px;
+  }
+
+  .container-rating h2 {
+    font-size: 15px;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+  .container h1 {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+}
